@@ -64,12 +64,13 @@ function Roulet(){
         setTimeout(() =>{play(1,23)}, 500);
     }
 
-    useEffect(()=>{
-        
+    const giveWin = ()=>{
         let win = valuePool[random]*valuePool[random1]*valuePool[random2]*bet;
         console.log(valuePool[random], valuePool[random1], valuePool[random2], bet, win);
         NewCount(win);
-    }, [random,random1,random2])
+    }
+
+    useEffect(giveWin, [random,random1,random2])
 
     
 

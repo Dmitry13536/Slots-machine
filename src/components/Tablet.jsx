@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
-import { useGame } from "../Context";
+import React from "react";
+
 
 const Tablet = ({newNum, random, isAnimating}) => {
-    // const {bet, NewCount} = useGame();
+
 
     return(
         <div className='tablet'>

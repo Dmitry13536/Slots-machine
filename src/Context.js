@@ -26,7 +26,7 @@ export const GameProvider = ({children}) => {
     }
 
     const addBet =  () => {
-        setBet(prev => prev + 10)
+        setBet(prev => Number(prev) + Number(10))
     }
 
     const [message, setMessage] = useState(['none', 'All correct', 1]);

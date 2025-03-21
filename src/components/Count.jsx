@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
-import { useAlert, useGame } from "../Context";
+import React from "react";
+import { useGame } from "../Context";
 
 const Count = () => {
     const {gold} = useGame();
