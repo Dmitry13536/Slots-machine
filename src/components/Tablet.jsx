@@ -8,8 +8,8 @@ const Tablet = ({newNum, random, isAnimating}) => {
         <div className='tablet'>
             <div className="window"></div>
             <div className={`values ${isAnimating ? 'animate' : ''}`}>
-                <p className="value">{newNum}</p>
-                <p className="value">{random}</p>               
+                <p className="value">x{newNum}</p>
+                <p className="value">x{random}</p>               
             </div>
         </div>
     )
