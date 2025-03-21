@@ -6,7 +6,7 @@ const Count = () => {
 
     return(
         <div className="count">
-            <p>{gold.toFixed(2)}g</p>
+            <p>{gold.toFixed(2)}$</p>
         </div>
     )
 }

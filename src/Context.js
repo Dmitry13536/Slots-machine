@@ -14,7 +14,7 @@ export const useGame = () => {
 }
 
 export const GameProvider = ({children}) => {
-    const [gold, setGold] = useState(1234340);
+    const [gold, setGold] = useState(100000);
     const [bet, setBet] = useState(10);
 
     const NewCount = (value) => {

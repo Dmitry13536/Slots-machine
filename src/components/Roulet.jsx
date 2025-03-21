@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, {useState} from "react";
 import Tablet from "./Tablet";
 import { useAlert, useGame } from "../Context";
 import Bet from "./bet";
@@ -62,16 +62,14 @@ function Roulet(){
         setIsAnimating(true);
         setTimeout(() =>{setIsAnimating(false)}, 500);
         setTimeout(() =>{play(1,23)}, 500);
+        giveWin();
     }
 
-    const giveWin = ()=>{
-        let win = valuePool[random]*valuePool[random1]*valuePool[random2]*bet;
-        console.log(valuePool[random], valuePool[random1], valuePool[random2], bet, win);
+    const giveWin = () => {
+        let win = valuePool[newNum] * valuePool[newNum1] * valuePool[newNum2] * bet;
+        console.log(valuePool[newNum], valuePool[newNum1], valuePool[newNum2], bet, win);
         NewCount(win);
-    }
-
-    useEffect(giveWin, [random,random1,random2])
-
+    };
     
 
     return(
