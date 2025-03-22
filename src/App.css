@@ -50,7 +50,8 @@
 }
 
 .value{
- margin: 8px 0;
+   margin: 8px 0;
+   font-weight: 800;
 }
 
 .values.animate{
@@ -72,12 +73,14 @@
 .count{
   display: flex;
   justify-self: center;
-  
+  margin: 2% 0;
+  font-size: 30px;
 }
 
 .bet{
   display: grid;
   grid-template-columns: 2fr 1fr;
+  column-gap: 5%;
   z-index: 12;
   margin-top: 60px;
 }
@@ -85,6 +88,12 @@
 .bet input{
   border-radius: 10px;
   padding: 12%;
+}
+
+.bet button{
+  border: none;
+  background-color: azure;
+  border-radius: 30px;
 }
 
 @keyframes dissapper {
@@ -135,4 +144,26 @@
 .alert.dis{
   transition: opacity 3s ease-in;
   opacity: 0;
+}
+
+@media (max-width: 600px) {
+  .tablet__button{
+    padding: 15%;
+  }
+
+  .bet{
+    grid-template-rows: 1fr 1fr;
+    row-gap: 3%;
+    grid-template-columns: 1fr;
+    width: 85%;
+  }
+
+  .bet input{
+    padding: 6%; 
+    font-size: 30px;
+  }
+
+  .alert{
+    top: 70%;
+  }
 }
